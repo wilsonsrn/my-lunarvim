@@ -14,10 +14,15 @@ lvim.plugins = {
 
   { 'jose-elias-alvarez/typescript.nvim' },
   { 'mg979/vim-visual-multi' },
-  { "Mofiqul/dracula.nvim" },
+  { 'maxmx03/dracula.nvim' },
   { 'editorconfig/editorconfig-vim' },
   { 'lunarvim/lunar.nvim' },
   { "morhetz/gruvbox" },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+  },
   { 'jparise/vim-graphql' },
   { 'f-person/git-blame.nvim' },
   {
@@ -93,6 +98,10 @@ lvim.plugins = {
     end,
   },
 
+  --Python
+  { 'AckslD/swenv.nvim' },
+  { 'stevearc/dressing.nvim' },
+  
   -- Rust
   "simrat39/rust-tools.nvim",
   config = function()
