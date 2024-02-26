@@ -12,6 +12,9 @@ lvim.keys.normal_mode["<C-u>"] = "<C-u>zz"
 lvim.keys.normal_mode["<C-a>"] = "ggVG"
 vim.opt.relativenumber = true
 
+lvim.keys.normal_mode["|"] = ":vsplit<CR>"
+lvim.keys.normal_mode["-"] = ":split<CR>"
+
 vim.keymap.set('n', 'gn', ":tabe %<CR>")
 lvim.lsp.buffer_mappings.normal_mode["gr"] = {
   ":lua require'telescope.builtin'.lsp_references()<cr>",
